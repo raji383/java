@@ -6,6 +6,11 @@ public class Task {
     private String description;
     private TaskStatus status;
 
+    public Task(String s) {
+        this.description = s;
+        this.status = TaskStatus.NEW;
+    }
+
     public void setDescription(String description) {
         this.description = description;
     }
@@ -22,5 +27,3 @@ public class Task {
         return this.status;
     }
 }
-
-
